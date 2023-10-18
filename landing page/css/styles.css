@@ -1,0 +1,84 @@
+/* Reset some default browser styles */
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply background color to the whole page */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+#header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 3em;
+}
+
+/* Navigation styles */
+#navbar {
+  background-color: lightblue;
+  overflow: hidden;
+  position: fixed; /* Make it stick/fixed */
+  top: 0;  /* Stick it at the top */
+  width: 100%;  /* Full width */
+  z-index: 1; /* Ensure it appears above all other elements */
+}
+
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-list li {
+  float: left;
+}
+
+#nav-list li a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+/* Main content styles */
+#main-content {
+  background-color: beige;
+  padding: 1em;
+}
+
+#main-content section {
+  padding: 3em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+}
+
+/* Footer styles */
+#footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 4em;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 600px) {
+  #nav-list li {
+    float: none;
+  }
+}
+
+/* New styles for active states */
+.your-active-class {
+  border-color: var(--secondary-color);  /* Example: Change border color when active */
+}
+
+#nav-list li a.active {
+  background-color: var(--secondary-color);  /* Example: Change background color of active nav link */
+  color: #FFFFFF;  /* Example: Change text color of active nav link */
+}
+
+/* ... (rest of your CSS code) ... */
